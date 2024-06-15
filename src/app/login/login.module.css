@@ -87,7 +87,7 @@
   }
 }
 
-@media screen and (max-height: 580px) and (max-width: 640px) {
+@media screen and (max-height: 636px) and (max-width: 640px) {
   .easyMyMoveLogoContainer {
     visibility: hidden;
   }
