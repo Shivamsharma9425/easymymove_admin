@@ -1,29 +1,32 @@
 import React from "react";
-import styles from "../styles/Home.module.css";
+import styles from "../login2/login2.module.css";
+import Image from "next/image";
+import logoImage from "../../../public/assets/images/Easemymove crop logo 2.png";
+import logoText from "../../../public/assets/images/Easemymove crop logo 1.png";
+import manImage from "../../../public/assets/images/untitled 25.png";
 
 const page = () => {
   return (
-    <div className="bodyContainer">
+    <div className={styles.bodyContainer}>
       <nav className={styles.navbar}>
-        <img
-          className={styles.logoImage2}
-          src="./assets/images/Easemymove crop logo 2.png"
-          alt="Easy My Move Logo1"
+        <Image
+          className={styles.logoImage}
+          src={logoImage}
+          alt="EasyMyMoveLogo"
         />
-        <img
+        <Image
           className={styles.logoText}
-          src="./assets/images/Easemymove crop logo 1.png"
-          alt="Easy My Move Logo2"
+          src={logoText}
+          alt="EasyMyMoveLogoText"
         />
       </nav>
-      <div className={styles.mainContainer}>
+      <div className={styles.mainContainer2}>
         <div className={styles.easyMyMoveLogoContainer2}>
-          <div className={styles.easyMyMovelogo1}>
-            <img
-              src="./assets/images/untitled 25.png"
-              alt="easy my move logo1 "
-            />
-          </div>
+          <Image
+            className={styles.manImage}
+            src={manImage}
+            alt="EasyMyMoveMan"
+          />
         </div>
         <div className={styles.LoginContainer}>
           <div className={styles.loginbox}>
