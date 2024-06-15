@@ -1,0 +1,164 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+
+.body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.navbar{
+    width: 100vw;
+    background-color: #f6f6f6;
+    padding: 0px 30px;
+    height: 70px;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logoImage2{
+    width: 105px;
+    padding: 4px 1.2em;
+    /* height: 70px; */
+}   
+.logoText{
+    width: 240px;
+    padding: 2px 1.2em;
+    height: 50px;
+}
+
+
+.mainContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  min-width: 100vw;
+}
+
+.easyMyMoveLogoContainer {
+   
+  width: 50vw;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f6f6f6;
+  /* overflow: hidden; */
+}
+
+.easyMyMoveLogoContainer2 {
+    width: 50vw;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+    background-color: transparent;
+}
+
+.easyMyMovelogo1 img {
+  width: 38vw;
+  /* min-width: 40vw; */
+}
+
+.logoImage {
+     position: relative;
+  width: 450px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* min-width: 40vw; */
+}
+
+.LoginContainer {
+  width: 50vw;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loginbox {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+}
+
+.loginbox h1 {
+  text-align: center;
+  color: #00704a;
+  font-size: 4rem;
+  font-weight: 500;
+  font-style: normal;
+  margin-bottom: 60px;
+}
+
+.loginInputs input {
+  border: none;
+  width: 100%;
+  outline: none;
+  background: transparent;
+  padding: 5px 0px;
+  text-align: start;
+}
+.loginInputs hr {
+  color: #555;
+  margin-bottom: 30px;
+  /* width: 95%; */
+}
+
+.mainbutton input {
+  padding: 8px 20px;
+  margin-top: 30px;
+  border-radius: 4px;
+  color: #f6f6f6;
+  background-color: #00704a;
+  outline: none;
+  border: none;
+  transition: 0.2s all ease;
+}
+
+.mainbutton input:hover{
+  background-color: #029061;
+  color: white;
+}
+
+@media screen and (max-width:640px) {
+  .mainContainer{
+    display: flex;
+    flex-direction: column;
+  }
+  .easyMyMoveLogoContainer2{
+    width: 100vw;
+    min-height: 80px;
+    margin-bottom: -80px;
+
+    /* height: 100px;  */
+  }
+  .easyMyMovelogo1 img {
+  width: 250px;
+  /* min-width: 40vw; */
+}
+  .LoginContainer{
+    width: 80vw;
+  }
+  .loginbox h1{
+    font-size: 3rem;
+  }
+  
+}
+
+@media screen and (max-width:768px){
+  .logoImage{
+    width: 80vw;
+  }
+}
+
+/* @media screen and (max-width:1024px){
+  .easyMyMovelogo1 img{
+    width: 450px;
+  }
+} */
+
