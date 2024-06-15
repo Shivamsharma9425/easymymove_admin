@@ -1,6 +1,7 @@
 import React from 'react'
 import styles from "../styles/Home.module.css"
 import Image from 'next/image'
+import logo from "../../../public/assets/images/Easemymove logo.png"
 
 
 const page = () => {
@@ -9,7 +10,7 @@ const page = () => {
     <div className={styles.easyMyMoveLogoContainer}>
             <div className={styles.easyMyMovelogo1}>
                 <div className={styles.logoImage}>
-                <Image  src="/assets/images/Easemymove logo.png" alt="easy my move logo1 png" width={500} height={500} />
+                <Image  src={logo} alt="easy my move logo1 png" fill />
                 </div>
             </div>
     </div>
