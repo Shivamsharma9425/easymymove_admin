@@ -3,6 +3,8 @@ import styles from "../Profile/profile.module.css";
 
 const Profile = () => {
   return (
+    <>
+    <div className={styles.sectionHeading}>Profile</div>
     <div className={styles.sectionDetails}>
       <div className={styles.personalSection}>
         <p className={styles.detailsHeading}> Personal Details</p>
@@ -26,6 +28,7 @@ const Profile = () => {
         </div>
       </div>
     </div>
+    </>
   );
 };
 

@@ -3,7 +3,9 @@ import styles from "./vendors.module.css"
 
 const Vendors = () => {
   return (
-    <div>Vendors</div>
+    <>
+    <div className={styles.sectionHeading}>Vendors</div>
+    </>
   )
 }
 

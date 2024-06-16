@@ -83,7 +83,7 @@ const Topbar = () => {
           <div id="profile" onClick={()=>{
             setSectionTitle("Profile")}}>
             {/* <Link href={"/admin/profile"} className={styles.Link}> */}
-              <div className={styles.profile}>
+              <div className={`${styles.navButtons} ${styles.profile}`}>
                 <img src="./assets/images/user_41.png" alt="" />
                 <p>Profile</p>
               </div>
@@ -93,7 +93,7 @@ const Topbar = () => {
         <div className={styles.mainsection}>
             
         <div className={styles.profilesection}>
-            <div className={styles.sectionHeading}>{sectionTitle}</div>
+            {/* <div className={styles.sectionHeading}>{sectionTitle}</div> */}
             {/* <div className={styles.sectionDetails}> */}
                {(sectionTitle=="Orders") ? <Orders /> : null }
                {(sectionTitle=="Vendors") ? <Vendors /> : null}

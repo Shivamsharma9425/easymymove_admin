@@ -1,6 +1,19 @@
-.personalDetailsMain, .businessDetailsMain{
-    width: 50vw;
+.sectionHeading{
+    color: #00704A;
+    font-weight: 500;
+    font-size: 2em;
+    /* line-height: 30px; */
+    margin: 25px 0px;
 }
+
+.personalDetailsMain, .businessDetailsMain{
+    width: 60%;
+}
+
+.businessSection{
+    margin-right: 16%;
+}
+
 
 .personalDetailsMain p, .businessDetailsMain p{
     margin: 10px 0px;
@@ -12,13 +25,16 @@
 .detailsHeading{
     margin-bottom: 20px;
     color: #333;
-    font-size: 3rem;
+    font-size: 3vw;
 }
 .sectionDetails{
     display: flex;  
+    /* overflow: scroll; */
     align-items: center;
-    /* justify-content: center; */
-    margin: 0px 60px;
+    justify-content: space-between;
+    /* width: 80%; */
+    /* margin: 0px 60px; */
+    overflow: hidden;
     border: 2px solid #e0dddd;
     border-radius: 15px;
     height: 60vh;

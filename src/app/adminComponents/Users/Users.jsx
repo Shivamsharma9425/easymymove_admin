@@ -3,7 +3,9 @@ import styles from "./user.module.css"
 
 const Users = () => {
   return (
-    <div>Users</div>
+    <>
+    <div className={styles.sectionHeading}>Users</div>
+    </>
   )
 }
 

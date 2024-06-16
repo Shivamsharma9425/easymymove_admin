@@ -1,8 +1,11 @@
 import React from 'react'
+import styles from "./helpdesk.module.css"
 
 const Helpdesk = () => {
   return (
-    <div>Helpdesk</div>
+   <>
+   <div className={styles.sectionHeading}>Helpdesk</div>
+   </>
   )
 }
 

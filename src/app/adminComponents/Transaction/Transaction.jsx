@@ -1,8 +1,10 @@
 import React from 'react'
+import styles from "./transaction.module.css" 
 
 const Transaction = () => {
   return (
-    <div>Transaction</div>
+    <>
+    <div className={styles.sectionHeading}>Transaction</div></>
   )
 }
 
