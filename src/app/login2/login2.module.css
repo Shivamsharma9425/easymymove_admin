@@ -91,17 +91,39 @@
   padding: 8px 20px;
   margin-top: 30px;
   border-radius: 4px;
-  color: #f6f6f6;
-  background-color: #00704a;
+  color: #111;
+  background-color: transparent;
+  border: 1px solid black;
   outline: none;
-  border: none;
   transition: 0.2s all ease;
 }
 
 .mainbutton input:hover {
-  background-color: #029061;
-  color: white;
+  background-color: #00704a;
+    color: white;
   cursor: pointer;
+
+}
+
+@media (max-height:305px){
+ 
+  .mainContainer2{
+    position: relative;
+  }
+  .manImage{
+    position: fixed;
+    left: 0px;
+  }
+  .LoginContainer{
+    position: static;
+    right: 0px;
+  }
+}
+
+@media (max-height:380px){
+  .loginbox h1{
+    margin-bottom: 0px;
+  }
 }
 
 @media screen and (max-height: 460px) {

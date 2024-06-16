@@ -1,0 +1,26 @@
+.personalDetailsMain, .businessDetailsMain{
+    width: 50vw;
+}
+
+.personalDetailsMain p, .businessDetailsMain p{
+    margin: 10px 0px;
+    color: #333;
+    font-size: 20px;
+}
+
+
+.detailsHeading{
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 3rem;
+}
+.sectionDetails{
+    display: flex;  
+    align-items: center;
+    /* justify-content: center; */
+    margin: 0px 60px;
+    border: 2px solid #e0dddd;
+    border-radius: 15px;
+    height: 60vh;
+    padding: 60px;
+}
