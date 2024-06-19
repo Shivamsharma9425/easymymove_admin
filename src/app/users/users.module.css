@@ -1,0 +1,62 @@
+.sectionHeading{
+    color: #00704A;
+    font-weight: 500;
+    font-size: 2em;
+    /* line-height: 30px; */
+    margin: 25px 0px;
+}
+
+.mainSection{
+    margin: 0px 60px;
+}
+
+.userNum{
+    color: #007f54;
+    font-weight: 300;
+    font-size: 20px;
+    /* line-height: 30px; */
+    margin: 25px 0px;
+}
+
+.searchbar{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background-color:  #f6f6f6;
+    padding: 2px 20px;
+    border-radius: 16px;
+    border: 1px solid #c9c9c9b7;
+
+}
+
+.searchbar button{
+    outline: none;
+    border: none;
+    background-color: transparent;
+    /* width: 100%; */
+}
+.searchIcon{
+    width: 23px;
+    height: 23px;
+    margin-top: 5px ;
+    /* margin: 0px 5px; */
+}
+.searchbar input{
+    outline: none;
+    border: none;
+    
+    background-color: transparent;
+    /* color: #0d0909d1; */
+    width: 100%;
+}
+.searchbar input::placeholder{
+    color: #c2c0c0;
+}
+
+.userDetailSection{
+    width: 40%;
+
+}
+/* .userDetailSection table{
+    min-width: 100%;
+} */

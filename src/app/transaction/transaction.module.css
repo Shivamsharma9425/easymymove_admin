@@ -1,0 +1,10 @@
+.sectionHeading{
+    color: #00704A;
+    font-weight: 500;
+    font-size: 2em;
+    /* line-height: 30px; */
+    margin: 25px 0px;
+}
+.mainSection{
+    margin: 0px 60px;
+}

@@ -1,0 +1,146 @@
+.sectionHeading{
+    color: #00704A;
+    font-weight: 500;
+    font-size: 2em;
+    /* line-height: 30px; */
+    margin: 25px 0px;
+}
+
+.sectionHeading .orderNum{
+    color: #007f54;
+    font-weight: 300;
+    font-size: 20px;
+    /* line-height: 30px; */
+    margin: 25px 0px;
+}
+
+.searchbar{
+    height: 40px;
+    margin: 10px 0px;
+}
+
+.orderDetails{
+    border: 1px solid #444;
+    display: flex;
+    flex-direction: column;
+    /* width: 80px; */
+    max-height: 80px;
+}
+
+
+.footer{
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    /* overflow: visible; */
+    height: 60px;
+    background-color: #f6f6f6;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    /* justify-content: center; */
+
+}
+
+.footerContent{
+    margin: 0px 60px;
+    display: flex;
+    gap: 15px;
+    font-size: 14px;
+    font-weight: 500;
+    /* align-items: center; */
+    /* justify-content: flex-end; */
+}
+
+/* body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 20px;
+} */
+
+.formContainer{
+    margin: 60px;
+    background-color: #f6f6f6;
+    /* width: 100%; */
+    height: 80vh;
+    border-radius: 8px;
+    position: relative;
+    /* overflow-y: scroll; */
+}
+.raiseAnIssue{
+    color: #00704A;
+    font-weight: 700;
+    text-align: center;
+    padding: 40px 0px;
+}
+
+.label{
+    padding: 0px 60px;
+    font-weight: 500;
+    font-size: 2rem;
+
+}
+.buttons{
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}
+
+/* .selectCategory{
+    
+   
+} */
+.selectCategory input{
+    border: none;
+    width: 83vw;
+    color: #666;
+    outline: none;
+
+    padding: 16px 40px;
+    background-color: white;
+    margin: 10px 60px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 3px #e0dedecb;
+
+}
+
+.descriptionArea{
+    display: flex;
+    flex-direction: column;
+}
+
+.description{
+    margin: 20px 60px;
+    outline: none;
+    border: none;
+    color: #666;
+    height: 26vh;
+    font-size: 0.8rem;
+    /* width: ; */
+    padding: 16px 40px;
+    border-radius: 8px;
+    /* margin: 10px 60px; */
+    box-shadow: 2px 2px 3px #e0dedecb;
+    /* border: 1px solid #444; */
+}
+
+
+
+.mainbutton input {
+    padding: 10px 60px;
+    margin: 40px 0px;
+    margin-right: 60px;
+    border-radius: 8px;
+    color: #f6f6f6;
+    background-color: #00704a;
+    outline: none;
+    border: none;
+    transition: 0.2s all ease;
+  }
+  
+  .mainbutton input:hover {
+    background-color: #016141;
+    color: white;
+  }
+  

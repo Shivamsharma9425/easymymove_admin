@@ -5,3 +5,38 @@
     /* line-height: 30px; */
     margin: 25px 0px;
 }
+
+.sectionHeading .requests{
+    color: #007f54;
+    font-weight: 300;
+    font-size: 16px;
+    /* line-height: 30px; */
+    margin: 28px 0px;
+}
+
+.heading{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.mainbutton {
+  padding: 8px 20px;
+  margin-top: 30px;
+  border-radius: 4px;
+  color: #f6f6f6;
+  background-color: #00704a;
+  outline: none;
+  border: none;
+  transition: 0.2s all ease;
+}
+
+.mainbutton:hover {
+  background-color: #016040;
+  color: white;
+  cursor: pointer;
+}
+
+.linkcomponent{
+    text-decoration: none;
+}
