@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "../Profile/profile.module.css";
+import styles from "./profile.module.css";
 import Topbar from "@/Components/Topbar/Topbar";
 
 const Profile = () => {
