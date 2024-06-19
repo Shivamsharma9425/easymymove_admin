@@ -19,7 +19,7 @@ const Helpdesk = () => {
         {/* <IssueButton /> */}
         <div className={styles.heading}>
           <div className={styles.sectionHeading}>
-            Helpdesk <span className={styles.requests}><p>(Requests) </p></span>
+            Helpdesk <span className={styles.requests}>(Requests) </span>
           </div>
 
           <div className={styles.linkcomponent}>
@@ -34,7 +34,7 @@ const Helpdesk = () => {
                   <p>Open</p>
                 </th>
                 <th className={styles.issueButton}><p>Resolved</p></th>
-                <th className={styles.issueButton}><p>Re-Issued</p></th>
+                <th className={styles.issueButton}><p>Re-Opened</p></th>
                 <th className={styles.issueButton}><p>Closed</p></th>
               </tr>
 
@@ -42,7 +42,7 @@ const Helpdesk = () => {
                 <th className={styles.tableCategory}>REQUEST ID</th>
                 <th className={styles.tableCategory}>CATEGORY</th>
                 <th className={styles.tableCategory}>DESCRIPTION</th>
-                <th className={`${styles.tableCategory} ${styles.tableData2}`}>ACTION</th>
+                <th className={styles.tableData2}>ACTION</th>
               </tr>
             </thead>
 
@@ -59,7 +59,7 @@ const Helpdesk = () => {
                 <td className={styles.tableData}>Order not delivered</td>
                 <td
                   className={styles.tableData2}
-                  style={{ borderRight: "0px" }}
+                  // style={{ borderRight: "0px" }}
                 >
                   Issue
                 </td>
