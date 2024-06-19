@@ -1,17 +1,17 @@
 import React from 'react'
-import Topbar from '../../Components/Topbar/Topbar'
+// import Topbar from '../../Components/Topbar/Topbar'
 import styles from "./users.module.css"
 import Image from 'next/image'
 import searchIcon from "../../../public/assets/images/search_interface_symbol_11.png"
 import userImage from "../../../public/assets/images/rectangle_390.jpeg"
-import UsersViewDetails from '@/Components/UsersViewDetails.jsx/UsersViewDetails'
+// import UsersViewDetails from '@/Components/UsersViewDetails.jsx/UsersViewDetails'
 
 const page = () => {
  
   return (
     <div>
       {/* <UsersViewDetails /> */}
-        <Topbar />
+        {/* <Topbar /> */}
         <div className={styles.mainSection}>
         <div className={styles.sectionHeading}>Users <span className={styles.userNum}>(23)</span></div>
         <div className={styles.searchbar}>

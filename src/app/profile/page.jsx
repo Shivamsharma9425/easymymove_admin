@@ -1,11 +1,11 @@
 import React from "react";
 import styles from "./profile.module.css";
-import Topbar from "@/Components/Topbar/Topbar";
+// import Topbar from "@/Components/Topbar/Topbar";
 
 const Profile = () => {
   return (
     <>
-    <Topbar />
+    {/* <Topbar /> */}
     <div className={styles.mainSection}>
     <div className={styles.sectionHeading}>Profile</div>
     <div className={styles.sectionDetails}>
