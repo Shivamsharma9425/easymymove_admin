@@ -1,0 +1,101 @@
+
+.formContainer{
+    margin: 60px;
+    background-color: #f6f6f6;
+    /* width: 100%; */
+    /* height: 50vh;
+    width: 50vw; */
+    border-radius: 8px;
+    position: relative;
+    /* overflow-y: scroll; */
+}
+.raiseAnIssue{
+    color: #00704A;
+    font-weight: 700;
+    text-align: center;
+    padding: 2% 0px;
+}
+
+.label{
+    padding: 0px 60px;
+    font-weight: 500;
+    font-size: 2rem;
+
+}
+
+/* .selectCategory{
+    
+   
+} */
+.selectCategory select{
+    border: none;
+    /* width: 83vw; */
+    color: #666;
+    outline: none;
+    /* display: inline-block;
+    flex-direction: column; */
+    width: 90%;
+    padding: 2% 40px;
+    background-color: white;
+    margin: 10px 60px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 3px #e0dedecb;
+
+}
+
+.descriptionArea{
+    display: flex;
+    margin-top: 10px ;
+    flex-direction: column;
+}
+
+.description{
+    margin: 10px 60px;
+    outline: none;
+    border: none;
+    color: #666;
+    height: auto;
+    font-size: 0.8rem;
+    /* width: ; */
+    padding: 16px 40px;
+    border-radius: 8px;
+    /* margin: 10px 60px; */
+    box-shadow: 2px 2px 3px #e0dedecb;
+    /* border: 1px solid #444; */
+}
+
+
+
+.mainbutton button {
+    padding: 10px 60px;
+    margin: 40px 0px;
+    /* width: 30%; */
+    margin-left: 60px;
+    /* display: flex; */
+    /* flex-direction: column; */
+    border-radius: 8px;
+    color: #f6f6f6;
+    background-color: #00704a;
+    outline: none;
+    border: none;
+    transition: 0.2s all ease;
+    cursor: pointer;
+  }
+  
+  .buttons{
+    /* position: relative; */
+    /* bottom: 0px; */
+    /* right: 0px; */
+    /* display: grid;
+    gap: 60px; */
+    padding: 0px 60px;
+    /* flex-direction: column; */
+    align-items: flex-end;
+}
+
+
+  .mainbutton input:hover {
+    background-color: #016141;
+    color: white;
+  }
+  

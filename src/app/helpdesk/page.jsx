@@ -1,19 +1,21 @@
-"use client"
+"use client";
 
-import React,{useState}from "react";
+import React, { useState } from "react";
 // import Topbar from "@/Components/Topbar/Topbar"
 import styles from "./helpdesk.module.css";
 import IssueButton from "@/Components/IssueBtton/IssueButton";
+import Issuemodal from "@/Components/helpdeskComponents/IssueModal/Issuemodal";
 // import Modal from './Modal'
 // import Link from 'next/link'
 // import UserIssue from "@/Components/UserIssue/UserIssue"
 
 const Helpdesk = () => {
-  const [UserIssue, setShowUserIssue] = useState(false)
+  const [isOpen, setisOpen] = useState(false);
   return (
     <>
       {/* {(UserIssue)? (<UserIssue />) : (<></>)} */}
       {/* <Topbar /> */}
+
       <div className={styles.mainSection}>
         {/* {(modal)? <Modal />:null} */}
         {/* <IssueButton /> */}
@@ -22,8 +24,12 @@ const Helpdesk = () => {
             Helpdesk <span className={styles.requests}>(Requests) </span>
           </div>
 
-          <div className={styles.linkcomponent}>
+          <div onClick={() => setisOpen(true)}>
             <div className={styles.mainbutton}>Raise an issue</div>
+            <Issuemodal
+              isOpen={isOpen}
+              onRequestClose={() => setisOpen(false)}
+            />
           </div>
         </div>
         <div className={styles.helpdeskSection}>
@@ -33,9 +39,15 @@ const Helpdesk = () => {
                 <th className={styles.issueButton}>
                   <p>Open</p>
                 </th>
-                <th className={styles.issueButton}><p>Resolved</p></th>
-                <th className={styles.issueButton}><p>Re-Opened</p></th>
-                <th className={styles.issueButton}><p>Closed</p></th>
+                <th className={styles.issueButton}>
+                  <p>Resolved</p>
+                </th>
+                <th className={styles.issueButton}>
+                  <p>Re-Opened</p>
+                </th>
+                <th className={styles.issueButton}>
+                  <p>Closed</p>
+                </th>
               </tr>
 
               <tr>
@@ -51,7 +63,7 @@ const Helpdesk = () => {
                 <td className={styles.tableData}>124568696877347</td>
                 <td className={styles.tableData}>Order related </td>
                 <td className={styles.tableData}>Order not delivered</td>
-                <td className={styles.tableData2}>Issue</td>
+                <td className={styles.tableData2}>Issue Closed</td>
               </tr>
               <tr>
                 <td className={styles.tableData}>124568696877347</td>
@@ -61,7 +73,7 @@ const Helpdesk = () => {
                   className={styles.tableData2}
                   // style={{ borderRight: "0px" }}
                 >
-                  Issue
+                  Issue Closed
                 </td>
               </tr>
             </tbody>
