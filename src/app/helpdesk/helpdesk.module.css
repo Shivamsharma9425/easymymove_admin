@@ -80,7 +80,7 @@
 } */
 
 .issueButton{
-    color: #6b6b6b;
+    color: #565555;
     margin: 10px auto;
     width: 10%;
     /* display: flex;
@@ -91,8 +91,11 @@
     border-bottom: 1px solid #cacaca;
     font-size: 0.8rem;
 }
+.issueButton:hover{
+    cursor: pointer;
+}
 
-.issueButton p:hover {
+.issueButton:hover p{
     color: white;
     background-color: #00704A;
     cursor: pointer;
@@ -146,3 +149,22 @@
     align-items: center;
     font-size: 14px;
 } */
+
+#sectionOpened p{
+    /* border-top-left-radius: 1rem;
+    border-end-start-radius: 1rem;
+    border-top-right-radius: 0;
+    border-end-end-radius: 0;
+    padding-left: 0.5rem; */
+    color: white;
+    background-color: #00704A;
+    cursor: pointer;
+    /* transition: all 4s ; */
+    padding: 5px;
+    width: 50%;
+    /* height: 10px; */
+    border-radius: 10px;
+    margin: 2px auto;     
+    
+}
+

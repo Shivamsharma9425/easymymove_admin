@@ -1,24 +1,15 @@
 "use client";
 
 import React, { useState } from "react";
-// import Topbar from "@/Components/Topbar/Topbar"
 import styles from "./helpdesk.module.css";
-import IssueButton from "@/Components/IssueBtton/IssueButton";
 import Issuemodal from "@/Components/helpdeskComponents/IssueModal/Issuemodal";
-// import Modal from './Modal'
-// import Link from 'next/link'
-// import UserIssue from "@/Components/UserIssue/UserIssue"
 
 const Helpdesk = () => {
   const [isOpen, setisOpen] = useState(false);
+  const [sectionTitle, setSectionTitle] = useState("");
   return (
     <>
-      {/* {(UserIssue)? (<UserIssue />) : (<></>)} */}
-      {/* <Topbar /> */}
-
       <div className={styles.mainSection}>
-        {/* {(modal)? <Modal />:null} */}
-        {/* <IssueButton /> */}
         <div className={styles.heading}>
           <div className={styles.sectionHeading}>
             Helpdesk <span className={styles.requests}>(Requests) </span>
@@ -36,16 +27,40 @@ const Helpdesk = () => {
           <table className={styles.hdTable}>
             <thead>
               <tr className={styles.trow}>
-                <th className={styles.issueButton}>
+                <th
+                  className={styles.issueButton}
+                  onClick={() => {
+                    setSectionTitle("o");
+                  }}
+                  id={sectionTitle === "o" && styles.sectionOpened}
+                >
                   <p>Open</p>
                 </th>
-                <th className={styles.issueButton}>
+                <th
+                  className={styles.issueButton}
+                  onClick={() => {
+                    setSectionTitle("r");
+                  }}
+                  id={sectionTitle === "r" && styles.sectionOpened}
+                >
                   <p>Resolved</p>
                 </th>
-                <th className={styles.issueButton}>
+                <th
+                  className={styles.issueButton}
+                  onClick={() => {
+                    setSectionTitle("ro");
+                  }}
+                  id={sectionTitle === "ro" && styles.sectionOpened}
+                >
                   <p>Re-Opened</p>
                 </th>
-                <th className={styles.issueButton}>
+                <th
+                  className={styles.issueButton}
+                  onClick={() => {
+                    setSectionTitle("c");
+                  }}
+                  id={sectionTitle === "c" && styles.sectionOpened}
+                >
                   <p>Closed</p>
                 </th>
               </tr>
@@ -69,20 +84,12 @@ const Helpdesk = () => {
                 <td className={styles.tableData}>124568696877347</td>
                 <td className={styles.tableData}>Order related </td>
                 <td className={styles.tableData}>Order not delivered</td>
-                <td
-                  className={styles.tableData2}
-                  // style={{ borderRight: "0px" }}
-                >
-                  Issue Closed
-                </td>
+                <td className={styles.tableData2}>Issue Closed</td>
               </tr>
             </tbody>
           </table>
-          {/* <hr /> */}
         </div>
       </div>
-      {/* </div>
-} */}
     </>
   );
 };
